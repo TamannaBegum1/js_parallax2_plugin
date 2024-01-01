@@ -1,0 +1,42 @@
+body {
+  transform-style: preserve-3d;
+  transform: perspective(800px);
+}
+
+.image {
+  width: 1000px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -300px 0 0 -400px;
+  border-radius: 5px;
+  box-shadow: 0 45px 100px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+div[class*="layer-"] {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  transition: 0.1s;
+}
+
+.image .layer-1 { background-image: url(imgaes/1.png); }
+
+.image .layer-2 { background-image: url(imgaes/2.png); }
+
+.image .layer-3 { background-image: url(imgaes/3.png); }
+
+.image .layer-4 { background-image: url(imgaes/4.png); }
+
+.image .layer-5 { background-image: url(imgaes/5.png); }
+
+.image .layer-6 { background-image: url(imgaes/6.png); }
+
+.image .layer-7 { background-image: url(imgaes/7.png); }
